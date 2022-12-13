@@ -42,9 +42,9 @@ async def update_requirements(main , test):
     try:
         for i in a:
             await runcmd(f"pip install {i}")
-            print(f"تم بنجاح تحميل : {i}")
+            print(f"بە سەرکەوتوویی دابەزێنرا : {i}")
     except Exception as e:
-        print(f"هناك خطا اثناء تنزيل المكاتب {str(e)}")
+        print("هەڵە هەیە لە دابەزاندنی قوتابخانە {str(e)}")
 
 
 loop = asyncio.get_event_loop()
